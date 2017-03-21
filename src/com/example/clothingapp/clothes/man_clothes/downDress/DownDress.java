@@ -7,8 +7,8 @@ import com.example.clothingapp.clothes.man_clothes.ManCloth;
  */
 public class DownDress extends ManCloth {
 
-    public int countOfPlacket;
-    public int countOfButton;
+    private int countOfPlacket;
+    private int countOfButton;
 
     public DownDress(String brand, String season, String color, int countOfPlacket, int countOfButton) {
         super(brand, season, color);

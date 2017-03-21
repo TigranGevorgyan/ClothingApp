@@ -7,7 +7,7 @@ import com.example.clothingapp.clothes.woman_clothes.WomanCloth;
  */
 public class WomanShoes extends WomanCloth{
 
-    public boolean isClue;
+    private boolean isClue;
 
     public WomanShoes(String brand, String season, String color,boolean isClue) {
         super(brand, season, color);

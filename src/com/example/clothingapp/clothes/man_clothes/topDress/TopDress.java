@@ -7,9 +7,9 @@ import com.example.clothingapp.clothes.man_clothes.ManCloth;
  */
 public class TopDress extends ManCloth {
 
-    public int countOfPlacket;
-    public boolean hasChain;
-    public boolean isWeft;
+    private int countOfPlacket;
+    private boolean hasChain;
+    private boolean isWeft;
 
     public boolean isWeft() {
         return isWeft;

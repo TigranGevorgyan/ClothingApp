@@ -7,9 +7,9 @@ import com.example.clothingapp.clothes.Cloth;
  */
 public class ManCloth extends Cloth {
 
-    public String brand;
-    public String color;
-    public String season;
+    private String brand;
+    private String color;
+    private String season;
     public String style;
 
     public ManCloth(String brand, String season, String color) {

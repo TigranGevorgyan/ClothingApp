@@ -14,12 +14,12 @@ import java.util.HashMap;
  * Created by Taron on 03/19/17.
  */
 public class Man extends Person {
-    public Shoes shoes;
-    public TopDress topDress;
-    public DownDress downDress;
-    public Hat hat;
-    public boolean hasTattoo;
-    public String tattooColor;
+    private Shoes shoes;
+    private TopDress topDress;
+    private DownDress downDress;
+    private Hat hat;
+    private boolean hasTattoo;
+    private String tattooColor;
 
     public Man(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor) {
         super(firstName, age, lastName, hairColor, height, weight, cat, dog, eyeColor);

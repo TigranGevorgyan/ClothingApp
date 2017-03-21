@@ -19,13 +19,13 @@ import javax.print.Doc;
  */
 public class Woman extends Person {
 
-    public WomanShoes womanShoes;
-    public WomanDownDress womanDownDress;
-    public WomanTopDress womanTopDress;
-    public WomanHat womanHat;
-    public boolean hasMakeup;
-    public String lipstickColor;
-    public boolean hasEarrings;
+    private WomanShoes womanShoes;
+    private WomanDownDress womanDownDress;
+    private WomanTopDress womanTopDress;
+    private WomanHat womanHat;
+    private boolean hasMakeup;
+    private String lipstickColor;
+    private boolean hasEarrings;
 
     public Woman(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor, boolean hasMakeup, String lipstickColor, boolean hasEarrings) {
         super(firstName, age, lastName, hairColor, height, weight, cat, dog, eyeColor);

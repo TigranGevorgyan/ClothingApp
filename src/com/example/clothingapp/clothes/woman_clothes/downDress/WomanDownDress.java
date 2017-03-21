@@ -7,9 +7,9 @@ import com.example.clothingapp.clothes.woman_clothes.WomanCloth;
  */
 public class WomanDownDress extends WomanCloth {
 
-    public int countOfPlacket;
-    public int countOfButton;
-    public boolean isSport;
+    private int countOfPlacket;
+    private int countOfButton;
+    private boolean isSport;
 
     public WomanDownDress(String brand, String season, String color, int countOfPlacket, int countOfButton, boolean isSport) {
         super(brand, season, color);

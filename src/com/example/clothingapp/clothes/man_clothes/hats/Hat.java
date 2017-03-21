@@ -7,7 +7,7 @@ import com.example.clothingapp.clothes.man_clothes.ManCloth;
  */
 public class Hat extends ManCloth {
 
-    public boolean hasSticky_stiker;
+    private boolean hasSticky_stiker;
 
     public Hat(String brand, String season, String color, boolean hasSticky_stiker) {
         super(brand, season, color);

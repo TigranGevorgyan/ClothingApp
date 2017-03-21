@@ -10,15 +10,15 @@ import javax.print.Doc;
  */
 public class Person {
 
-    public String firstName;
-    public String lastName;
-    public int age;
-    public String hairColor;
-    public String eyeColor;
-    public int height;
-    public int weight;
-    public Cat cat;
-    public Dog dog;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String hairColor;
+    private String eyeColor;
+    private int height;
+    private int weight;
+    private Cat cat;
+    private Dog dog;
 
     public Person(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor) {
         this.firstName = firstName;

@@ -7,8 +7,8 @@ import com.example.clothingapp.clothes.woman_clothes.WomanCloth;
  */
 public class WomanHat extends WomanCloth {
 
-    public boolean isWritten;
-    public String whatIsWritten;
+    private boolean isWritten;
+    private String whatIsWritten;
 
 
     public WomanHat(String brand, String season, String color, boolean isWritten, String whatIsWritten) {
