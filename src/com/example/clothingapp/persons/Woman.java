@@ -112,12 +112,16 @@ public class Woman extends Person {
 
     }
 
+    public boolean canGoOut(){
+        return womanShoes != null && womanDownDress != null && womanTopDress != null && isHasMakeup();
+    }
+
     @Override
     public void goOut() {
         super.goOut();
-        if(womanShoes == null || womanDownDress == null || womanTopDress == null || !isHasMakeup())
-            System.out.println("I can not go out naked");
-        else System.out.println("I look great,going out");
+        if(canGoOut())
+            System.out.println("I look great,go out");
+        else System.out.println("I can not go out naked");
         System.out.println("--------------------------------");
     }
 }

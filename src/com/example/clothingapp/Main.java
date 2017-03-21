@@ -38,7 +38,7 @@ public class Main {
         Capotain capotain = new Capotain("Puma","summar","black",true);
         Cat cat = new Cat("Pushok",2,"Vana");
         Dog dog = new Dog("Rex","black","Xaski",3);
-        Man man = new Man("Tigran",22,"gevorgyan","black",175,70,cat,dog,"black",true,"blue");
+        Man man = new Man("Tigran",22,"gevorgyan","black",175,70,cat,dog,"black",null);
         man.setDog(dog);
         man.setCat(cat);
         man.setHat(capotain);

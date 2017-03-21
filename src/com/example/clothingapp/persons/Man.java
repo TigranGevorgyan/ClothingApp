@@ -18,16 +18,11 @@ public class Man extends Person {
     private TopDress topDress;
     private DownDress downDress;
     private Hat hat;
-    private boolean hasTattoo;
     private String tattooColor;
 
-    public Man(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor) {
-        super(firstName, age, lastName, hairColor, height, weight, cat, dog, eyeColor);
-    }
 
-    public Man(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor, boolean hasTattoo, String tattooColor) {
+    public Man(String firstName, int age, String lastName, String hairColor, int height, int weight, Cat cat, Dog dog, String eyeColor,String tattooColor) {
         super(firstName, age, lastName, hairColor, height, weight, cat, dog, eyeColor);
-        this.hasTattoo = hasTattoo;
         this.tattooColor = tattooColor;
     }
 
@@ -63,13 +58,13 @@ public class Man extends Person {
         this.hat = hat;
     }
 
-    public boolean isHasTattoo() {
-        return hasTattoo;
-    }
-
-    public void setHasTattoo(boolean hasTattoo) {
-        this.hasTattoo = hasTattoo;
-    }
+//    public boolean isHasTattoo() {
+//        return hasTattoo;
+//    }
+//
+//    public void setHasTattoo(boolean hasTattoo) {
+//        this.hasTattoo = hasTattoo;
+//    }
 
     public String getTattooColor() {
         return tattooColor;
@@ -78,6 +73,16 @@ public class Man extends Person {
     public void setTattooColor(String tattooColor) {
         this.tattooColor = tattooColor;
     }
+
+    public boolean hasTatoo(){
+        return tattooColor != null;
+    }
+
+    public boolean canGoOut(){
+        return shoes !=null && downDress !=null && topDress !=null;
+    }
+
+
 
     public void draw(){
         super.draw();
@@ -89,7 +94,7 @@ public class Man extends Person {
         topDress.draw();
         if(hat != null)
         hat.draw();
-        if(isHasTattoo()) {
+        if(hasTatoo()) {
             System.out.println(getFirstName() + " have a nice tattoo.");
             System.out.println("His tattoo color is: " + getTattooColor());
             System.out.println();
@@ -104,9 +109,9 @@ public class Man extends Person {
     @Override
     public void goOut() {
         super.goOut();
-        if(shoes == null || downDress == null || topDress == null)
-            System.out.println("I can not go out naked.");
-        else System.out.println("I look great,going out.");
+        if(canGoOut())
+            System.out.println("I look great,going out.");
+        else System.out.println("I can not go out naked.");
         System.out.println("-------------------------------------------");
     }
 }
