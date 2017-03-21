@@ -109,6 +109,7 @@ public class Woman extends Person {
             System.out.println(getFirstName() + " has earrings");
         }
         System.out.println();
+
     }
 
     @Override

@@ -47,11 +47,14 @@ public class Main {
         man.setShoes(derby);
         man.draw();
         man.goOut();
-        Woman woman = new Woman("Anna",18,"Gevorgyan","black",160,54,null,null,"gray",true,"red",true);
+
         Sandal sandal = new Sandal("Baldi","summar","withe",true);
         Woman_Jeans woman_jeans = new Woman_Jeans("Baldi","summar","black",4,2,false);
         Blouse blouse = new Blouse("Baldi","summar","withe",0,true);
         Fedora fedora = new Fedora("Puma","summar","black",true,"Very nice girl");
+        Woman woman = new Woman("Anna",18,"Gevorgyan","black",160,54,cat,dog,"gray",true,"red",true);
+        woman.setCat(cat);
+        woman.setDog(dog);
         woman.setWomanShoes(sandal);
         woman.setWomanDownDress(woman_jeans);
         woman.setWomanTopDress(blouse);

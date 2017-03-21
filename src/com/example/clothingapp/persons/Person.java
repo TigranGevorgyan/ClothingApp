@@ -113,6 +113,22 @@ public class Person {
         System.out.println("Eye color: " + getEyeColor());
         System.out.println("Height: " + getHeight());
         System.out.println("Weight: " + getWeight());
+        if(cat != null){
+            System.out.println(getFirstName() + " has a cat");
+            System.out.println("Cat name is: " + cat.getName());
+            System.out.println("Cat age is: " + cat.getAge());
+            System.out.println("Cat parod is: " + cat.getParod());
+            System.out.println();
+        }
+        if(dog != null){
+            System.out.println(getFirstName() + " has a dog");
+            System.out.println("Dog name is: " + dog.getName());
+            System.out.println("Dog parode is: " + dog.getParode());
+            System.out.println("Dog color is: " + dog.getColor());
+            System.out.println("Dog age is: " + dog.getAge());
+            System.out.println();
+
+        }
         System.out.println();
     }
 
