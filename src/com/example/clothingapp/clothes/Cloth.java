@@ -7,6 +7,23 @@ public class Cloth {
 
     public String clothSize;
     public boolean isUsed;
+    public boolean isFashion;
+
+    public boolean isFashion() {
+        return isFashion;
+    }
+
+    public void setFashion(boolean fashion) {
+        isFashion = fashion;
+    }
+
+    public String getClothSize() {
+        return clothSize;
+    }
+
+    public void setClothSize(String clothSize) {
+        this.clothSize = clothSize;
+    }
 
     public boolean isUsed() {
         return isUsed;
@@ -15,14 +32,4 @@ public class Cloth {
     public void setUsed(boolean used) {
         isUsed = used;
     }
-
-    public String getClothSize() {
-        return clothSize;
-    }
-
-    public void setClothSize(String size) {
-        this.clothSize = size;
-    }
-
-
 }

@@ -33,9 +33,9 @@ public class Main {
     public static void main(String[] args){
 
         Derby derby = new Derby("Puma","summar","white",true);
-        Men_Jeans men_jeans = new Men_Jeans("Armani","summar","blur",4,0);
+        Men_Jeans men_jeans = new Men_Jeans("Armani","summar","blur",4,0,"XXl",false);
         Man_Sweater man_sweater = new Man_Sweater("Armani","summar","blue",0,true,false);
-        Capotain capotain = new Capotain("Puma","summar","black",true);
+        Capotain capotain = new Capotain("Puma","summar","black",true,false);
         Cat cat = new Cat("Pushok",2,"Vana");
         Dog dog = new Dog("Rex","black","Xaski",3);
         Man man = new Man("Tigran",22,"gevorgyan","black",175,70,cat,dog,"black",null);

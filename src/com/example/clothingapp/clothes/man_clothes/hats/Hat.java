@@ -9,9 +9,10 @@ public class Hat extends ManCloth {
 
     private boolean hasSticky_stiker;
 
-    public Hat(String brand, String season, String color, boolean hasSticky_stiker) {
+    public Hat(String brand, String season, String color, boolean hasSticky_stiker,boolean isFashion) {
         super(brand, season, color);
         this.hasSticky_stiker = hasSticky_stiker;
+        this.isFashion = isFashion;
     }
 
     public boolean isHasSticky_stiker() {
@@ -29,6 +30,9 @@ public class Hat extends ManCloth {
         System.out.println("Hat season: " + getSeason());
         if(hasSticky_stiker)
             System.out.println("Hat have a sticky-stiker");
+        if(isFashion())
+            System.out.println("You always fashionable!!!");
+        else System.out.println("ADVICE.THIS HAT NOT IN FASHION.PLEASE BUY OTHER!!!");
         System.out.println();
     }
 }

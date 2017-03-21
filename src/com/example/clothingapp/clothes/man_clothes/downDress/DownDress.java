@@ -10,10 +10,12 @@ public class DownDress extends ManCloth {
     private int countOfPlacket;
     private int countOfButton;
 
-    public DownDress(String brand, String season, String color, int countOfPlacket, int countOfButton) {
+    public DownDress(String brand, String season, String color, int countOfPlacket, int countOfButton,String clothSize,boolean isUsed) {
         super(brand, season, color);
         this.countOfPlacket = countOfPlacket;
         this.countOfButton = countOfButton;
+        this.clothSize = clothSize;
+        this.isUsed = isUsed;
     }
 
     public int getCountOfPlacket() {
@@ -39,6 +41,10 @@ public class DownDress extends ManCloth {
         System.out.println("Down dress season: " + getSeason());
         System.out.println("Count of placket on down dress: " + getCountOfPlacket());
         System.out.println("Count of button on down dress: " + getCountOfButton());
+        System.out.println("Down dress size: " + getClothSize());
+        if (isUsed()) {
+            System.out.println("Before anybody wear it");
+        }
         System.out.println();
     }
 }
