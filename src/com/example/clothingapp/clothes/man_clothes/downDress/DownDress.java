@@ -43,7 +43,8 @@ public class DownDress extends ManCloth {
         System.out.println("Count of button on down dress: " + getCountOfButton());
         System.out.println("Down dress size: " + getClothSize());
         if (isUsed()) {
-            System.out.println("Before anybody wear it");
+            System.out.println("BEFORE ANYBODY WEAR IT.");
+            System.out.println("ADVICE.GOOD WASH,AFTER WEAR.");
         }
         System.out.println();
     }
