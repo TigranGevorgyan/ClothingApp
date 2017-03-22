@@ -32,9 +32,9 @@ import com.example.clothingapp.pets.dogs.Dog;
 public class Main {
     public static void main(String[] args){
 
-        Derby derby = new Derby("Puma","summar","white",true);
+        Derby derby = new Derby("Puma","summar","white",true,42);
         Men_Jeans men_jeans = new Men_Jeans("Armani","summar","blur",4,0,"XXl",true);
-        Man_Sweater man_sweater = new Man_Sweater("Armani","summar","blue",0,true,false);
+        Man_Sweater man_sweater = new Man_Sweater("Armani","summar","blue",0,true,false,true);
         Capotain capotain = new Capotain("Puma","summar","black",true,false);
         Cat cat = new Cat("Pushok",2,"Vana");
         Dog dog = new Dog("Rex","black","Xaski",3);
@@ -52,7 +52,7 @@ public class Main {
         Woman_Jeans woman_jeans = new Woman_Jeans("Baldi","summar","black",4,2,false);
         Blouse blouse = new Blouse("Baldi","summar","withe",0,true);
         Fedora fedora = new Fedora("Puma","summar","black",true,"Very nice girl");
-        Woman woman = new Woman("Anna",18,"Gevorgyan","black",160,54,cat,dog,"gray",true,"red",true);
+        Woman woman = new Woman("Anna",18,"Gevorgyan","black",160,54,cat,dog,"gray",true,"red",false);
         woman.setCat(cat);
         woman.setDog(dog);
         woman.setWomanShoes(sandal);
@@ -61,6 +61,9 @@ public class Main {
         woman.setWomanHat(fedora);
         woman.draw();
         woman.goOut();
+
+        man.giftForWoman(woman);
+        woman.giftForMan(man);
 
 
 

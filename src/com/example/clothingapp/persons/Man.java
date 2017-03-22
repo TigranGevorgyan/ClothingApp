@@ -114,4 +114,16 @@ public class Man extends Person {
         else System.out.println("I can not go out naked.");
         System.out.println("-------------------------------------------");
     }
+
+    public void giftForWoman(Woman obj){
+        if(obj.isHasMakeup()){
+            System.out.println(obj.getFirstName() + " today you have makeup,and you are very beautiful.I agree go with you to the cafe.");
+            System.out.println("This flowers for you.");
+            System.out.println();
+        }
+        else {
+            System.out.println(obj.getFirstName() + " you don`t have makeup and I think you need a money.Take it and go beauty salon.");
+            System.out.println();
+        }
+    }
 }

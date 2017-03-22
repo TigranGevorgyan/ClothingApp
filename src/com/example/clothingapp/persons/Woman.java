@@ -90,7 +90,6 @@ public class Woman extends Person {
         this.womanDownDress = womanDownDress;
     }
 
-
     public void draw(){
         super.draw();
         if(womanShoes != null)
@@ -101,9 +100,10 @@ public class Woman extends Person {
             womanTopDress.draw();
         if(womanHat != null)
             womanHat.draw();
-        System.out.println("Her lipstick color: " + getLipstickColor());
         if(isHasMakeup()){
             System.out.println(getFirstName() + " has makeup");
+            System.out.println("Her lipstick color: " + getLipstickColor());
+            System.out.println();
         }
         if(isHasEarrings()){
             System.out.println(getFirstName() + " has earrings");
@@ -123,5 +123,21 @@ public class Woman extends Person {
             System.out.println("I look great,go out");
         else System.out.println("I can not go out naked");
         System.out.println("--------------------------------");
+    }
+
+    public void giftForMan(Man man){
+        if(isHasEarrings()){
+            StringBuilder builder = new StringBuilder();
+            builder.append("I am working,").append("and can dedicate you anything.").append(man.getFirstName())
+                    .append('\n').append("Well!!!This car I dedicate you.");
+            System.out.println(builder.toString());
+        }
+        else {
+            StringBuilder builder = new StringBuilder();
+            builder.append("Sorry ").append(man.getFirstName()).append(" I dont have a monay,and can not dedicate you anything.");
+            System.out.println(builder.toString());
+        }
+
+
     }
 }

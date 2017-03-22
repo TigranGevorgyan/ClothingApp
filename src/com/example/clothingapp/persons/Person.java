@@ -113,6 +113,7 @@ public class Person {
         System.out.println("Eye color: " + getEyeColor());
         System.out.println("Height: " + getHeight());
         System.out.println("Weight: " + getWeight());
+        System.out.println();
         if(cat != null){
             System.out.println(getFirstName() + " has a cat");
             System.out.println("Cat name is: " + cat.getName());
