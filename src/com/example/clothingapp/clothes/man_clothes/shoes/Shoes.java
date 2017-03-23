@@ -37,7 +37,9 @@ public class Shoes extends ManCloth {
         System.out.println("Shoes brand: " + getBrand());
         System.out.println("Shoes color: " + getColor());
         System.out.println("Shoes season: " + getSeason());
-        System.out.println("Shoes size is: " + getSize());
+        if(!(getSize() <= 0))
+            System.out.println("Shoes size: " + getSize());
+        else System.out.println("Shoes size can not be small than 1");
         if(hasClue)
             System.out.println("Shoes have a clue");
         System.out.println();

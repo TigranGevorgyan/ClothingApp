@@ -41,7 +41,8 @@ public class DownDress extends ManCloth {
         System.out.println("Down dress season: " + getSeason());
         System.out.println("Count of placket on down dress: " + getCountOfPlacket());
         System.out.println("Count of button on down dress: " + getCountOfButton());
-        System.out.println("Down dress size: " + getClothSize());
+        getSizeByCriterion();
+        System.out.println();
         if (isUsed()) {
             System.out.println("BEFORE ANYBODY WEAR IT.");
             System.out.println("ADVICE.GOOD WASH,AFTER WEAR.");

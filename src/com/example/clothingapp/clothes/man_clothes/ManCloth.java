@@ -49,4 +49,5 @@ public class ManCloth extends Cloth {
     public void setSeason(String season) {
         this.season = season;
     }
+
 }
