@@ -10,12 +10,13 @@ public class DownDress extends ManCloth {
     private int countOfPlacket;
     private int countOfButton;
 
-    public DownDress(String brand, String season, String color, int countOfPlacket, int countOfButton,String clothSize,boolean isUsed) {
-        super(brand, season, color);
+    public DownDress(String brand, String season, String color, int countOfPlacket, int countOfButton, String clothSize, boolean isUsed, int price) {
+        super(brand, season, color,price);
         this.countOfPlacket = countOfPlacket;
         this.countOfButton = countOfButton;
         this.clothSize = clothSize;
         this.isUsed = isUsed;
+        this.price = price;
     }
 
     public int getCountOfPlacket() {
@@ -37,6 +38,7 @@ public class DownDress extends ManCloth {
     public void draw(){
         System.out.println("Down dress style: " + getStyle());
         System.out.println("Down dress brand: " + getBrand());
+        System.out.println("Down dress price: " + getPrice());
         System.out.println("Down dress color: " + getColor());
         System.out.println("Down dress season: " + getSeason());
         System.out.println("Count of placket on down dress: " + getCountOfPlacket());

@@ -11,10 +11,11 @@ public class WomanHat extends WomanCloth {
     private String whatIsWritten;
 
 
-    public WomanHat(String brand, String season, String color, boolean isWritten, String whatIsWritten) {
-        super(brand, season, color);
+    public WomanHat(String brand, String season, String color, boolean isWritten, String whatIsWritten, int price) {
+        super(brand, season, color, price);
         this.isWritten = isWritten;
         this.whatIsWritten = whatIsWritten;
+        this.price = price;
     }
 
     public boolean isWritten() {
@@ -36,6 +37,7 @@ public class WomanHat extends WomanCloth {
     public void draw(){
         System.out.println("Hat style: " + getStyle());
         System.out.println("Hat brand: " + getBrand());
+        System.out.println("Hat price: " + getPrice());
         System.out.println("Hat color: " + getColor());
         System.out.println("Hat season: " + getSeason());
         if(isWritten()){

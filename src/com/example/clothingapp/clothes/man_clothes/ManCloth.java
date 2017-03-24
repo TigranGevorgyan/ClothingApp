@@ -12,10 +12,12 @@ public class ManCloth extends Cloth {
     private String season;
     public String style;
 
-    public ManCloth(String brand, String season, String color) {
+
+    public ManCloth(String brand, String season, String color, int price) {
         this.brand = brand;
         this.season = season;
         this.color = color;
+        this.price = price;
     }
 
     public String getStyle() {

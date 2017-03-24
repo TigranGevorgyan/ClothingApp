@@ -32,10 +32,10 @@ import com.example.clothingapp.pets.dogs.Dog;
 public class Main {
     public static void main(String[] args){
 
-        Derby derby = new Derby("Puma","summar","white",true,42);
-        Men_Jeans men_jeans = new Men_Jeans("Armani","summar","blur",4,0,"S",true);
-        Man_Sweater man_sweater = new Man_Sweater("Armani","summar","blue",0,true,false,true,"S");
-        Capotain capotain = new Capotain("Puma","summar","black",true,false);
+        Derby derby = new Derby("Puma","summar","white",true,42,8000);
+        Men_Jeans men_jeans = new Men_Jeans("Armani","summar","blur",4,0,"S",true,12000);
+        Man_Sweater man_sweater = new Man_Sweater("Armani","summar","blue",0,true,false,true,"S",6000);
+        Capotain capotain = new Capotain("Puma","summar","black",true,false,4000);
         Cat cat = new Cat("Pushok",2,"Vana");
         Dog dog = new Dog("Rex","black","Xaski",3);
         Man man = new Man("Tigran",22,"gevorgyan","black",175,70,cat,dog,"black",null);
@@ -48,10 +48,10 @@ public class Main {
         man.draw();
         man.goOut();
 
-        Sandal sandal = new Sandal("Baldi","summar","withe",true);
-        Woman_Jeans woman_jeans = new Woman_Jeans("Baldi","summar","black",4,2,false,"L");
-        Blouse blouse = new Blouse("Baldi","summar","white",0,true,"L");
-        Fedora fedora = new Fedora("Puma","summar","black",true,"Very nice girl");
+        Sandal sandal = new Sandal("Baldi","summar","withe",true,15000);
+        Woman_Jeans woman_jeans = new Woman_Jeans("Baldi","summar","black",4,2,false,"L",10000);
+        Blouse blouse = new Blouse("Baldi","summar","white",0,true,"L",8000);
+        Fedora fedora = new Fedora("Puma","summar","black",true,"Very nice girl",3000);
         Woman woman = new Woman("Anna",18,"Gevorgyan","black",160,54,cat,dog,"gray",true,"red",false);
         woman.setCat(cat);
         woman.setDog(dog);

@@ -5,8 +5,8 @@ package com.example.clothingapp.clothes.woman_clothes.shoes;
  */
 public class Pump extends WomanShoes {
 
-    public Pump(String brand, String season, String color, boolean isClue) {
-        super(brand, season, color, isClue);
+    public Pump(String brand, String season, String color, boolean isClue, int price) {
+        super(brand, season, color, isClue, price);
         this.style = "Pump";
     }
 }

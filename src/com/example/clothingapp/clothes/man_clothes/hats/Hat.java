@@ -9,10 +9,11 @@ public class Hat extends ManCloth {
 
     private boolean hasSticky_stiker;
 
-    public Hat(String brand, String season, String color, boolean hasSticky_stiker,boolean isFashion) {
-        super(brand, season, color);
+    public Hat(String brand, String season, String color, boolean hasSticky_stiker,boolean isFashion, int price) {
+        super(brand, season, color, price);
         this.hasSticky_stiker = hasSticky_stiker;
         this.isFashion = isFashion;
+        this.price = price;
     }
 
     public boolean isHasSticky_stiker() {
@@ -26,6 +27,7 @@ public class Hat extends ManCloth {
     public void draw(){
         System.out.println("Hat style: " + getStyle());
         System.out.println("Hat brand: " + getBrand());
+        System.out.println("Hat price: " + getPrice());
         System.out.println("Hat color: " + getColor());
         System.out.println("Hat season: " + getSeason());
         if(hasSticky_stiker)

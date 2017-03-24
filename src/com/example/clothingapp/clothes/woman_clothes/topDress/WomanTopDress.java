@@ -10,11 +10,12 @@ public class WomanTopDress extends WomanCloth{
     private int countOfBotton;
     private boolean isWeft;
 
-    public WomanTopDress(String brand, String season, String color, int countOfBotton, boolean isWeft,String clothSize) {
-        super(brand, season, color);
+    public WomanTopDress(String brand, String season, String color, int countOfBotton, boolean isWeft,String clothSize, int price) {
+        super(brand, season, color, price);
         this.countOfBotton = countOfBotton;
         this.isWeft = isWeft;
         this.clothSize = clothSize;
+        this.price = price;
     }
 
     public int getCountOfBotton() {
@@ -36,6 +37,7 @@ public class WomanTopDress extends WomanCloth{
     public void draw(){
         System.out.println("Top dress style: " + getStyle());
         System.out.println("Top dress brand: " + getBrand());
+        System.out.println("Top dress price: " + getPrice());
         System.out.println("Top dress color: " + getColor());
         System.out.println("Top dress season: " + getSeason());
         getSizeByCriterion();

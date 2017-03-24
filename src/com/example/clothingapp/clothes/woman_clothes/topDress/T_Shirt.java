@@ -5,8 +5,8 @@ package com.example.clothingapp.clothes.woman_clothes.topDress;
  */
 public class T_Shirt extends WomanTopDress {
 
-    public T_Shirt(String brand, String season, String color, int countOfBotton, boolean isWeft, String clothSize) {
-        super(brand, season, color, countOfBotton, isWeft, clothSize);
+    public T_Shirt(String brand, String season, String color, int countOfBotton, boolean isWeft, String clothSize, int price) {
+        super(brand, season, color, countOfBotton, isWeft, clothSize, price);
         this.style = "T-Shirt";
     }
 }

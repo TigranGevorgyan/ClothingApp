@@ -8,10 +8,8 @@ import com.example.clothingapp.clothes.man_clothes.hats.Hat;
 public class Derby extends Shoes {
 
 
-    public Derby(String brand, String season, String color, boolean hasClue, int size) {
-        super(brand, season, color, hasClue, size);
+    public Derby(String brand, String season, String color, boolean hasClue, int size, int price) {
+        super(brand, season, color, hasClue, size, price);
         this.style = "Derby";
     }
-
-
 }

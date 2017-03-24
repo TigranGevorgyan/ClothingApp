@@ -35,18 +35,20 @@ public class TopDress extends ManCloth {
         this.hasChain = hasCheap;
     }
 
-    public TopDress(String brand, String season, String color, int countOfPlacket, boolean isWeft, boolean hasChain, boolean isUsed, String clothsize) {
-        super(brand, season, color);
+    public TopDress(String brand, String season, String color, int countOfPlacket, boolean isWeft, boolean hasChain, boolean isUsed, String clothsize, int price) {
+        super(brand, season, color, price);
         this.countOfPlacket = countOfPlacket;
         this.isWeft = isWeft;
         this.hasChain = hasChain;
         this.isUsed = isUsed;
         this.clothSize = clothsize;
+        this.price = price;
     }
 
     public void draw(){
         System.out.println("Top dress style: " + getStyle());
         System.out.println("Top dress brand: " + getBrand());
+        System.out.println("Top dress price: " + getPrice());
         System.out.println("Top dress color: " + getColor());
         System.out.println("Top dress season: " + getSeason());
         System.out.println("Count of placket on top dress: " + getCountOfPlacket());

@@ -9,9 +9,10 @@ public class WomanShoes extends WomanCloth{
 
     private boolean isClue;
 
-    public WomanShoes(String brand, String season, String color,boolean isClue) {
-        super(brand, season, color);
+    public WomanShoes(String brand, String season, String color,boolean isClue, int price) {
+        super(brand, season, color, price);
         this.isClue = isClue;
+        this.price = price;
     }
 
     public boolean isClue() {
@@ -25,6 +26,7 @@ public class WomanShoes extends WomanCloth{
     public void draw(){
         System.out.println("Shoes style: " + getStyle());
         System.out.println("Shoes brand: " + getBrand());
+        System.out.println("Shoes price: " + getPrice());
         System.out.println("Shoes color: " + getColor());
         System.out.println("Shoes season: " + getSeason());
         if(isClue()){

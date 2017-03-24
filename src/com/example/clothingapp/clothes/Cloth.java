@@ -8,6 +8,15 @@ public class Cloth {
     public String clothSize;
     public boolean isUsed;
     public boolean isFashion;
+    public int price;
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
     public boolean isFashion() {
         return isFashion;
