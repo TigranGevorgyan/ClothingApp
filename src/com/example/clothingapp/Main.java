@@ -102,6 +102,9 @@ public class Main {
         shop.womanTopDresses[3] = new Woman_Sweater("Armani","winther","black",2,true,"M",15000);
         shop.womanTopDresses[4] = new Woman_Sweater("Zilli","summar","green",0,false,"M",10000);
         shop.totalPriceOfWomanTopDress();
+        System.out.println("--------------------------------------------------");
+
+        System.out.println(String.format("Commodites store there in %d.",shop.getTotalCost()));
 
 
 
