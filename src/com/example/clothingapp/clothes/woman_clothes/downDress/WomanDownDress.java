@@ -18,6 +18,7 @@ public class WomanDownDress extends WomanCloth {
         this.isSport = isSport;
         this.clothSize = clothSize;
         this.price = price;
+        this.type = "Woman down dress";
     }
 
     public int getCountOfPlacket() {

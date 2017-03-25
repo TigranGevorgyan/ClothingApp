@@ -16,6 +16,7 @@ public class WomanTopDress extends WomanCloth{
         this.isWeft = isWeft;
         this.clothSize = clothSize;
         this.price = price;
+        this.type = "Woman top dress";
     }
 
     public int getCountOfBotton() {

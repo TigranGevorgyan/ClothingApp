@@ -17,6 +17,7 @@ public class DownDress extends ManCloth {
         this.clothSize = clothSize;
         this.isUsed = isUsed;
         this.price = price;
+        this.type = "Man down dress";
     }
 
     public int getCountOfPlacket() {

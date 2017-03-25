@@ -43,6 +43,7 @@ public class TopDress extends ManCloth {
         this.isUsed = isUsed;
         this.clothSize = clothsize;
         this.price = price;
+        this.type = "Man top dress";
     }
 
     public void draw(){

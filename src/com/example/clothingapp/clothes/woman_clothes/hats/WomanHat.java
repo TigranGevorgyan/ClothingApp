@@ -16,6 +16,7 @@ public class WomanHat extends WomanCloth {
         this.isWritten = isWritten;
         this.whatIsWritten = whatIsWritten;
         this.price = price;
+        this.type = "Woman hat";
     }
 
     public boolean isWritten() {

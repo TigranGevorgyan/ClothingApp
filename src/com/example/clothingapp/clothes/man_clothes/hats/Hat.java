@@ -14,6 +14,7 @@ public class Hat extends ManCloth {
         this.hasSticky_stiker = hasSticky_stiker;
         this.isFashion = isFashion;
         this.price = price;
+        this.type = "Man hat";
     }
 
     public boolean isHasSticky_stiker() {

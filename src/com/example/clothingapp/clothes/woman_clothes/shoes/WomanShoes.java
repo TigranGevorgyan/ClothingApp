@@ -13,6 +13,7 @@ public class WomanShoes extends WomanCloth{
         super(brand, season, color, price);
         this.isClue = isClue;
         this.price = price;
+        this.type = "Woman shoes";
     }
 
     public boolean isClue() {

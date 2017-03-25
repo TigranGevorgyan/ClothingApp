@@ -15,6 +15,7 @@ public class Shoes extends ManCloth {
         this.hasClue = hasClue;
         this.size = size;
         this.price = price;
+        this.type = "Man shoes";
     }
 
 

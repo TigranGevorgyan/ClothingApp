@@ -48,7 +48,7 @@ public class Main {
         Shop shop = new Shop();
         shop.manDownDress[0] = new Men_Jeans("Davos","every day","blue",4,0,"Xl",false,14000);
         shop.manDownDress[1] = new Men_Jeans("Davos","every day","blue",4,0,"Xl",false,12000);
-        shop.manDownDress[2] = new Man_Classic_trouser("Armani","summar","black",4,0,"S",false,15000);
+        shop.manDownDress[2] = new Man_Classic_trouser("Armani","summar","black",4,0,"S",false,30000);
         shop.manDownDress[3] = new Man_Classic_trouser("Dolche Gabbana","winther","black",2,3,"XL",false,8000);
         shop.manDownDress[4] = new Short("Hummel","summar","blue",0,0,"S",false,5000);
         shop.totalPriceOfManDownDress();
@@ -104,7 +104,16 @@ public class Main {
         shop.totalPriceOfWomanTopDress();
         System.out.println("--------------------------------------------------");
 
-        System.out.println(String.format("Commodites store there in %d.",shop.getTotalCost()));
+        System.out.println(String.format("Commodites store there in %d AMD.",shop.getTotalCost()));
+
+        System.out.println("---------------------------------------------------");
+
+        System.out.println(String.format("Most expensive commudity cost in this shop is %d AMD.",shop.mostExpensiveCommudity(shop.array)));
+
+        System.out.println("------------------------------------------------------");
+
+        shop.findByPrice(shop.mostExpensiveCommudity(shop.array),shop.manHats);
+
 
 
 
