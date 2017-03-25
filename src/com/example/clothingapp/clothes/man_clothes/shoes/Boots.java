@@ -10,4 +10,6 @@ public class Boots extends Shoes {
         super(brand, season, color, hasClue, size, price);
         this.style = "Boots";
     }
+
+
 }

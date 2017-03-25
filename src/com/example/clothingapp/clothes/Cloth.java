@@ -1,9 +1,11 @@
 package com.example.clothingapp.clothes;
 
+import com.example.clothingapp.Shop;
+
 /**
  * Created by Taron on 03/19/17.
  */
-public class Cloth {
+public class Cloth{
 
     public String clothSize;
     public boolean isUsed;
@@ -45,25 +47,25 @@ public class Cloth {
     public void getSizeByCriterion(){
         switch (getClothSize()){
             case "S":
-                System.out.println("Down dress size: S(Small)");
+                System.out.println("Dress size: S(Small)");
                 break;
             case "L":
-                System.out.println("Down dress size: L(Large)");
+                System.out.println("Dress size: L(Large)");
                 break;
             case "XL":
-                System.out.println("Down dress size: XL(X-Large)");
+                System.out.println("Dress size: XL(X-Large)");
                 break;
             case "XS":
-                System.out.println("Down dress size: XS(X-Small)");
+                System.out.println("Dress size: XS(X-Small)");
                 break;
             case "M":
-                System.out.println("Down dress size: M(Medium)");
+                System.out.println("Dress size: M(Medium)");
                 break;
             case "XXl":
-                System.out.println("Down dress size: XXL(2X-Large)");
+                System.out.println("Dress size: XXL(2X-Large)");
                 break;
             default:
-                System.out.println("Down dress size non specified by standart criteria.");
+                System.out.println("Dress size non specified by standart criteria.");
 
         }
     }

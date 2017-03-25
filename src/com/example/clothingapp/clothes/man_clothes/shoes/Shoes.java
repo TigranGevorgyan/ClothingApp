@@ -17,6 +17,8 @@ public class Shoes extends ManCloth {
         this.price = price;
     }
 
+
+
     public boolean isHasClue() {
         return hasClue;
     }
